@@ -1,0 +1,15 @@
+.btn-ex-var {
+  button.rcl-btn {
+    margin: 0.2rem;
+  }
+}
+
+.btn-ex-cus {
+  > div:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  button.rcl-btn {
+    margin: 0.2rem;
+    margin-right: 1rem;
+  }
+}

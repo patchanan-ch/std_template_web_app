@@ -1,0 +1,188 @@
+.notification-example-page {
+  --notification-blue: var(--secondary-500, #4e73df);
+  --notification-heading: var(--text-primary, #2f3c53);
+  --notification-copy: var(--text-secondary, #6b7b95);
+  --notification-border: var(--color-border, #e3e6f0);
+  font-family: "Nunito", sans-serif;
+
+  .card {
+    margin-bottom: 24px;
+  }
+}
+
+.notification-trigger-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.notification-trigger {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--text-secondary, #6b7b95);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+
+  button.rcl-btn.btn {
+    flex: 0 0 100px;
+  }
+}
+
+.notification-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.notification-section {
+  padding: 24px;
+  border: 1px solid var(--notification-border);
+  border-radius: 5px;
+
+  h2 {
+    margin: 0 0 14px;
+    color: var(--notification-heading);
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25.12px;
+    letter-spacing: 0.1px;
+  }
+}
+
+.notification-section__usage {
+  margin: 0 0 24px;
+  color: var(--notification-copy);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.02px;
+  letter-spacing: 0.17px;
+}
+
+.notification-preview {
+  width: min(100%, 500px);
+  margin-bottom: 24px;
+  padding: 6px 16px;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  .MuiAlert-icon {
+    margin-right: 12px;
+    padding: 7px 0;
+
+    svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  .MuiAlert-message {
+    padding: 8px 0;
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    line-height: 20.02px;
+    letter-spacing: 0.17px;
+  }
+
+  .MuiAlertTitle-root {
+    margin: 0 0 4px;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+  }
+
+  .MuiAlert-action {
+    align-items: flex-start;
+    margin-right: 0;
+    padding: 4px 0 0 16px;
+
+    button {
+      padding: 5px;
+      color: inherit;
+    }
+  }
+
+  &--success {
+    color: var(--green-800, #0a4317);
+    background: var(--green-25, #ebfeed);
+
+    .MuiAlert-icon {
+      color: var(--green-500, #28a745);
+    }
+  }
+
+  &--warning {
+    color: var(--amber-800, #5e4812);
+    background: var(--amber-50, #fef8f1);
+
+    .MuiAlert-icon {
+      color: var(--amber-500, #f6c23e);
+    }
+  }
+
+  &--error {
+    color: var(--red-800, #641b13);
+    background: var(--red-50, #fceded);
+
+    .MuiAlert-icon {
+      color: var(--red-500, #e74a3b);
+    }
+  }
+
+  &--info {
+    color: var(--cyan-800, #104951);
+    background: var(--cyan-50, #e8fafe);
+
+    .MuiAlert-icon {
+      color: var(--cyan-500, #37b9cc);
+    }
+  }
+}
+
+.notification-code-block.MuiBox-root {
+  margin-bottom: 0;
+  border-color: var(--notification-blue);
+
+  > .MuiBox-root:first-child {
+    min-height: 36px;
+    background-color: var(--notification-blue);
+  }
+}
+
+.notification-best-practices {
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+    padding-left: 18px;
+    color: var(--text-primary, #2f3c53);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.02px;
+    letter-spacing: 0.17px;
+  }
+
+  li::marker {
+    color: var(--primary-main, #1976d2);
+  }
+}
+
+.notification-live-alert {
+  width: min(500px, calc(100vw - 32px)) !important;
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .notification-trigger {
+    align-items: flex-start;
+  }
+
+  .notification-section {
+    padding: 20px 16px;
+  }
+}

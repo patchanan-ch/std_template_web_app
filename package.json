@@ -1,0 +1,50 @@
+{
+  "name": "rcl-react-template",
+  "private": true,
+  "version": "3.1.8",
+  "type": "module",
+  "scripts": {
+    "tokens:build": "node scripts/generate-dcs-tokens.mjs",
+    "dev": "vite",
+    "build": "npm run tokens:build && tsc && vite build",
+    "build-jboss": "tsc && vite build --base=/ExampleWebApp",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/icons-material": "^9.0.0",
+    "@mui/material": "^9.0.0",
+    "@mui/x-charts": "^9.7.0",
+    "@mui/x-data-grid": "^9.0.0",
+    "@mui/x-date-pickers": "^9.0.0",
+    "axios": "^1.13.2",
+    "moment": "^2.29.4",
+    "rcl-shared-components": "./lib/rcl-shared-components-3.11.8.tgz",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.8.0",
+    "react-dom": "^18.2.0",
+    "react-google-charts": "^4.0.1",
+    "react-router-dom": "^6.15.0",
+    "styled-components": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "sass": "^1.69.0",
+    "typescript": "^5.4.5",
+    "vite": "^4.4.5"
+  }
+}

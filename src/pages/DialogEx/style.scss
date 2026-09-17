@@ -1,0 +1,99 @@
+// Dialog design tokens from Design System node 2511:8613.
+.rcl-dialog {
+  --dialog-royal-blue: #4e73df;
+  --dialog-title: #2f3c53;
+  --dialog-description: #6b7b95;
+  --dialog-gray: #8e8e93;
+
+  .MuiPaper-root {
+    border-radius: 14px !important;
+    overflow: hidden;
+  }
+
+  .rcl-dialog__header {
+    box-sizing: border-box;
+    height: 44px;
+    min-height: 44px;
+    padding: 9px 16px !important;
+    border-bottom-color: var(--dialog-royal-blue);
+  }
+
+  .rcl-dialog__title-text {
+    color: var(--dialog-title);
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .rcl-dialog__close-btn {
+    width: 24px;
+    height: 24px;
+    color: var(--dialog-gray) !important;
+
+    svg {
+      width: 13px;
+      height: 13px;
+    }
+  }
+
+  .rcl-dialog__content {
+    padding: 24px 32px 0 !important;
+    gap: 0;
+  }
+
+  .rcl-dialog__icon-wrap {
+    width: 56px;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 56px;
+      height: 56px;
+    }
+  }
+
+  .rcl-dialog__body-title {
+    margin-top: 16px;
+    line-height: normal;
+  }
+
+  .rcl-dialog__description {
+    margin-top: 8px;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  .rcl-dialog__actions {
+    gap: 16px;
+    padding: 24px 32px 24px !important;
+
+    button.rcl-btn.btn {
+      width: 100px;
+      min-width: 100px;
+      height: 32px;
+      font-family: "Nunito", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 22px;
+    }
+
+    button.rcl-btn.btn.rcl-gray-1 {
+      color: var(--dialog-royal-blue);
+      background: #fff;
+      border: 1px solid var(--dialog-royal-blue);
+
+      &:not([disabled]):hover,
+      &:not([disabled]):active,
+      &:not([disabled]):focus {
+        color: var(--dialog-royal-blue);
+        background: #f4f6fd;
+        border: 1px solid var(--dialog-royal-blue);
+      }
+    }
+
+    button.rcl-btn.btn.rcl-blue-2 {
+      background: var(--dialog-royal-blue);
+      border-color: var(--dialog-royal-blue);
+    }
+  }
+}
