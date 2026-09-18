@@ -16,9 +16,16 @@
 
 .btn-ex-outline {
   display: grid;
-  grid-template-columns: repeat(2, minmax(120px, 1fr));
-  gap: 0.5rem 1.25rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
   align-items: center;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-width: 0;
+  }
 
   &__button {
     background: var(--base-25, #fff);
@@ -51,9 +58,10 @@
     &--red { color: var(--red-500, #e74a3a); }
   }
 
-  > span {
+  &__item > span {
     color: var(--text-primary, #2f3c53);
     font-size: 14px;
     line-height: 22px;
+    white-space: nowrap;
   }
 }
