@@ -1225,6 +1225,20 @@
       }
     }
   },
+  "forest-green": {
+    "25": { "$type": "color", "$value": { "colorSpace": "srgb", "hex": "#F7FCF9", "alpha": 1 } },
+    "50": { "$type": "color", "$value": { "colorSpace": "srgb", "hex": "#EAF7F0", "alpha": 1 } },
+    "100": { "$type": "color", "$value": { "colorSpace": "srgb", "hex": "#DDF4E8", "alpha": 1 } },
+    "200": { "$type": "color", "$value": { "colorSpace": "srgb", "hex": "#C3E4D2", "alpha": 1 } },
+    "300": { "$type": "color", "$value": { "colorSpace": "srgb", "hex": "#AAD4BC", "alpha": 1 } },
+    "400": { "$type": "color", "$value": { "colorSpace": "srgb", "hex": "#90C4A6", "alpha": 1 } },
+    "500": { "$type": "color", "$value": { "colorSpace": "srgb", "hex": "#77B591", "alpha": 1 } },
+    "600": { "$type": "color", "$value": { "colorSpace": "srgb", "hex": "#5CA57C", "alpha": 1 } },
+    "700": { "$type": "color", "$value": { "colorSpace": "srgb", "hex": "#3F9567", "alpha": 1 } },
+    "800": { "$type": "color", "$value": { "colorSpace": "srgb", "hex": "#168653", "alpha": 1 } },
+    "900": { "$type": "color", "$value": { "colorSpace": "srgb", "hex": "#117346", "alpha": 1 } },
+    "950": { "$type": "color", "$value": { "colorSpace": "srgb", "hex": "#0D633C", "alpha": 1 } }
+  },
   "teal": {
     "25": {
       "$type": "color",
