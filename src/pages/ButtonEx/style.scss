@@ -42,7 +42,10 @@
 
     &:hover {
       cursor: pointer;
-      filter: brightness(0.96);
+    }
+
+    &:active {
+      transform: translateY(1px);
     }
 
     &:focus-visible {
@@ -50,12 +53,36 @@
       outline-offset: 2px;
     }
 
-    &--tealblue { color: #37b9cc; }
-    &--royalblue { color: #4e73df; }
-    &--gray { color: #6d6e7b; }
-    &--yellow { color: #ffa500; }
-    &--green { color: #28a745; }
-    &--red { color: #e74a3a; }
+    &--tealblue {
+      color: #37b9cc;
+      &:hover { background: #f7fdff; border-color: #3b91a0; color: #3b91a0; }
+      &:active { background: #e8fafe; border-color: #1d6d78; color: #1d6d78; }
+    }
+    &--royalblue {
+      color: #4e73df;
+      &:hover { background: #f5f6fd; border-color: #385bba; color: #385bba; }
+      &:active { background: #eef0fc; border-color: #29448f; color: #29448f; }
+    }
+    &--gray {
+      color: #6d6e7b;
+      &:hover { background: #faf9f9; border-color: #4d4f5d; color: #4d4f5d; }
+      &:active { background: #f3f3f5; border-color: #353640; color: #353640; }
+    }
+    &--yellow {
+      color: #ffa500;
+      &:hover { background: #fffcf9; border-color: #c28326; color: #c28326; }
+      &:active { background: #fff5ee; border-color: #955f00; color: #955f00; }
+    }
+    &--green {
+      color: #28a745;
+      &:hover { background: #f7fcf9; border-color: #338544; color: #338544; }
+      &:active { background: #eaf7f0; border-color: #136225; color: #136225; }
+    }
+    &--red {
+      color: #e74a3a;
+      &:hover { background: #fdf4f4; border-color: #b2453c; color: #b2453c; }
+      &:active { background: #fdeded; border-color: #8e2a20; color: #8e2a20; }
+    }
   }
 
   &__item > span {
