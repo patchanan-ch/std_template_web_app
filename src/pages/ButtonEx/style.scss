@@ -28,7 +28,7 @@
   }
 
   &__button {
-    background: var(--base-25, #fff);
+    background: #ffffff;
     border: 1px solid currentColor;
     border-radius: 4px;
     box-sizing: border-box;
@@ -46,20 +46,20 @@
     }
 
     &:focus-visible {
-      outline: 2px solid var(--secondary-500, #4e73df);
+      outline: 2px solid #4e73df;
       outline-offset: 2px;
     }
 
-    &--tealblue { color: var(--cyan-500, #37b9cc); }
-    &--royalblue { color: var(--secondary-500, #4e73df); }
-    &--gray { color: var(--slate-600, #6d6e7b); }
-    &--yellow { color: var(--orange-500, #f0a500); }
-    &--green { color: var(--green-500, #28a745); }
-    &--red { color: var(--red-500, #e74a3a); }
+    &--tealblue { color: #37b9cc; }
+    &--royalblue { color: #4e73df; }
+    &--gray { color: #6d6e7b; }
+    &--yellow { color: #ffa500; }
+    &--green { color: #28a745; }
+    &--red { color: #e74a3a; }
   }
 
   &__item > span {
-    color: var(--text-primary, #2f3c53);
+    color: #2f3c53;
     font-size: 14px;
     line-height: 22px;
     white-space: nowrap;
