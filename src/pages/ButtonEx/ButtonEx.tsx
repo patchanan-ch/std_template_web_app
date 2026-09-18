@@ -71,6 +71,22 @@ export const ButtonEx = () => {
           </Row>
         </div>
       </CardInfo>
+      <CardInfo title="Outline">
+        <div className="btn-ex-outline" aria-label="Outline button variants">
+          <button className="btn-ex-outline__button btn-ex-outline__button--tealblue">Default</button>
+          <span>Tealblue</span>
+          <button className="btn-ex-outline__button btn-ex-outline__button--royalblue">Default</button>
+          <span>Royalblue</span>
+          <button className="btn-ex-outline__button btn-ex-outline__button--gray">Default</button>
+          <span>Gray</span>
+          <button className="btn-ex-outline__button btn-ex-outline__button--yellow">Default</button>
+          <span>Yellow</span>
+          <button className="btn-ex-outline__button btn-ex-outline__button--green">Default</button>
+          <span>Green</span>
+          <button className="btn-ex-outline__button btn-ex-outline__button--red">Default</button>
+          <span>Red</span>
+        </div>
+      </CardInfo>
       <CardInfo title="Customization">
         <div className="btn-ex-cus">
           <div>

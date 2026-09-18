@@ -13,3 +13,47 @@
     margin-right: 1rem;
   }
 }
+
+.btn-ex-outline {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
+  gap: 0.5rem 1.25rem;
+  align-items: center;
+
+  &__button {
+    background: var(--base-25, #fff);
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 32px;
+    line-height: 22px;
+    padding: 0 10px;
+    transition: background-color 120ms ease, border-color 120ms ease;
+
+    &:hover {
+      cursor: pointer;
+      filter: brightness(0.96);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--secondary-500, #4e73df);
+      outline-offset: 2px;
+    }
+
+    &--tealblue { color: var(--cyan-500, #37b9cc); }
+    &--royalblue { color: var(--secondary-500, #4e73df); }
+    &--gray { color: var(--slate-600, #6d6e7b); }
+    &--yellow { color: var(--orange-500, #f0a500); }
+    &--green { color: var(--green-500, #28a745); }
+    &--red { color: var(--red-500, #e74a3a); }
+  }
+
+  > span {
+    color: var(--text-primary, #2f3c53);
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
